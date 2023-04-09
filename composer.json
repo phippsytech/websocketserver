@@ -1,0 +1,13 @@
+{
+    "name" : "phippsytech/websocketserver",
+    "type" : "library",
+    "require": {
+        "cboden/ratchet": "^0.4.4",
+        "hidehalo/nanoid-php": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhippsyTech\\WebsocketServer\\": "src"
+        }
+    }
+}
