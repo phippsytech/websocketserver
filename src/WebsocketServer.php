@@ -1,6 +1,6 @@
 <?php
 
-namespace PhippsyTech;
+namespace PhippsyTech\WebsocketServer;
 
 use \Ratchet\MessageComponentInterface;
 use \Ratchet\ConnectionInterface;
@@ -35,6 +35,11 @@ class WebsocketServer implements MessageComponentInterface {
     public function onError(ConnectionInterface $conn, \Exception $e) {
         echo "An error has occurred: {$e->getMessage()}\n";
         $conn->close();
+    }
+
+    public function onMessage(ConnectionInterface $from, $json) {
+        // $message = json_decode($json, true);
+        // (new \PhippsyTech\WebsocketServer\handleSocketData)($this, $message);
     }
 
     ## Additional functions to aid with sending and receiving messages
