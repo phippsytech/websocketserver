@@ -7,7 +7,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PhippsyTech\\WebsocketServer\\": "src"
+            "PhippsyTech\\WebsocketServer\\": "src/"
         }
     }
 }
