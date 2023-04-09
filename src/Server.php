@@ -44,7 +44,7 @@ class Server implements MessageComponentInterface {
     ## Additional functions to aid with sending and receiving messages
     public function handleSocketData($json){
         $message = json_decode($json, true);
-        (new \PhippsyTech\WebsocketServer\handleSocketData)($this, $message);
+        (new \PhippsyTech\WebsocketServer\HandleSocketData)($this, $message);
     }
     
     public function multicast($message){
